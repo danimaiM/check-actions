@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(231, 233, 234);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 40px;
+}
+
+nav {
+  flex: 1;
+  padding: 0 10px;
+}
+nav li {
+  list-style: none;
+}
+
+main {
+  flex: 2.5;
+  background-color: #222;
+}
+aside {
+  flex: 1.5;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-rounded {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.btn-rounded:hover {
+  background-color: rgb(11, 11, 34);
+}
+
+.nav-link a span {
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.nav-link li {
+  margin: 3px 0;
+}
+
+.nav-link a,
+.nav-profile {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 15px;
+  border-radius: 9999px;
+  transition: all 0.3s;
+}
+.nav-link a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.nav-link a:hover,
+.nav-profile:hover {
+  background-color: #222;
+}
+
+.btn-tweet button {
+  display: flex;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1.5em;
+  justify-content: center;
+  border-radius: 99999px;
+  outline: none;
+  border: none;
+  margin-top: 1em;
+  background-color: rgb(29, 155, 240);
+  color: #f2f2f2;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-tweet button:hover {
+  background-color: rgb(30, 134, 204);
+}
+.nav-profile {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.nav-profile-data {
+  display: flex;
+}
+.nav-profile-data-img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.nav-profile-data div > span {
+  display: flex;
+}
+
+.profile-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.username {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
+}
